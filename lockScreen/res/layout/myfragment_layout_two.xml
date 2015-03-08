@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/b4" -->
+
+    <!-- android:background="@drawable/border1" -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:textColor="#FF9900"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="Features : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:textColor="#FF9900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="1) It takes photo of a person who tries to unlock phone with wrong pattern." />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FF9900"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView1"
+        
+        android:text="2) You can also delete the data on your phone when wrong pattern is entered." />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:textColor="#FF9900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3) It starts alarm when wrong pattern is entered" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Go!" />
+
+</LinearLayout>

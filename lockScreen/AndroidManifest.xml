@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lockscreen"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+   <uses-permission android:name="android.permission.RECORD_AUDIO" /> 
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+<uses-permission android:name="android.permission.READ_SMS" />
+       
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_dark"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+                
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".email_activity"></activity>
+        <activity android:name=".contacts_edit"></activity>
+        <activity android:name=".Start1"></activity>
+        <activity android:name=".Start2"></activity>
+        <activity android:name=".Start3"></activity>
+        <activity android:name=".Start4"></activity>
+        <activity android:name=".Help"></activity>
+        <activity android:name=".About"></activity>
+        
+        <activity
+            android:name=".CameraActivity"
+            android:screenOrientation="portrait">
+            </activity>
+            <activity android:name=".startActivity"></activity>
+        
+        
+        
+        <receiver
+			android:name="AdminReceiver"
+			android:permission="android.permission.BIND_DEVICE_ADMIN">
+			<meta-data
+				android:name="android.app.device_admin"
+				android:resource="@xml/device_admin"/>
+
+			<intent-filter>
+				<action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+				<action android:name="android.app.action.ACTION_PASSWORD_CHANGED"/>
+				<action android:name="android.app.action.ACTION_PASSWORD_FAILED"/>
+				<action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED"/>
+			</intent-filter>
+		</receiver>
+		
+		<receiver android:name=".IncomingSms">
+            
+            <intent-filter>
+         <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+     </intent-filter>
+            
+        </receiver>
+		
+        <receiver
+    android:name="MyAdminReceiver"
+    android:permission="android.permission.BIND_DEVICE_ADMIN">
+    <meta-data
+        android:name="android.app.device_admin"
+        android:resource="@xml/admin"/>
+
+    <intent-filter>
+        <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    </intent-filter>
+</receiver>
+    </application>
+
+</manifest>
+

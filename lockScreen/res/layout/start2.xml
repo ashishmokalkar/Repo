@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="21dp"
+        android:gravity="left"
+        android:text="Pick 3 contacts which are close to you and can help you in  your emergency.Your current location will be messaged to these contacts."
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:background="#FF9900"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/add_people_black"
+        
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+         />
+    
+    <!-- android:src="@drawable/ic_action_add_person" -->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/add_people_black"
+        
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/textView4"
+         />
+	<!-- android:src="@drawable/ic_action_add_person" -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF9900"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/imageView3"
+        android:text="3rd e.no" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:background="#66000000"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView2"
+        android:text="Prev"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        
+        android:layout_marginBottom="10dp"
+        android:background="#66000000"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="1st e.no"
+        android:textColor="#FF9900" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/add_people_black"
+         />
+		<!-- android:src="@drawable/ic_action_add_person" -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="20dp"
+        android:text="2nd e.no"
+        android:textColor="#FF9900" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:gravity="left"
+        android:text="Pick 3 Contacts"
+        android:textColor="#FF9900"
+        android:textSize="32dp" />
+
+</RelativeLayout>
